@@ -1,302 +1,359 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>José Eduardo Gómez</title>
 	
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<meta name="description" content="Hoja de vida en línea, José Eduardo Gómez">
-	<meta name="author" content="José Eduardo Gómez">
-	
-	<title>José Eduardo Gómez - Hoja de vida</title>
-	
-	<!-- Bootstrap core CSS -->
-	<link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-	
-	<!-- Custom fonts for this template -->
-	<link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet">
-	<link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
-	
-	<!-- Custom styles for this template -->
-	<link href="css/resume.min.css" rel="stylesheet">
-	
-</head>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@700&family=Raleway&display=swap" rel="stylesheet">
+	<link href="./assets/css/style.css" rel="stylesheet">
 
-<body id="page-top">
-	
-	<nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
-		<a class="navbar-brand js-scroll-trigger" href="#page-top">
-			<span class="d-block d-lg-none">Eduardo Gómez</span>
-			<span class="d-none d-lg-block">
-				<img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="img/je-gomez.jpeg" alt="">
-			</span>
-		</a>
-		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-			<span class="navbar-toggler-icon"></span>
-		</button>
-		<div class="collapse navbar-collapse" id="navbarSupportedContent">
-			<ul class="navbar-nav">
-				<li class="nav-item">
-					<a class="nav-link js-scroll-trigger" href="#about">Sobre mí</a>
+</head>
+<body class="bg-gray-50 font-raleway text-gray-700">
+	<div id="mobileMenu" class="fixed h-screen w-screen z-20 bg-gray-300 flex transform scale-y-0 origin-bottom transition-transform duration-200">
+		<nav class="w-full self-center">
+			<ul class="text-indigo-600 font-nunito">
+				<li class="text-center py-2">
+					<a onclick="closeMobileMenu()" class="hover:underline" href="#">Sobre mí</a>
 				</li>
-				<li class="nav-item">
-					<a class="nav-link js-scroll-trigger" href="#experience">Experiencia</a>
+				<li class="text-center py-2 mt-2">
+					<a onclick="closeMobileMenu()" class="hover:underline" href="#proyectos">Proyectos</a>
 				</li>
-				<li class="nav-item">
-					<a class="nav-link js-scroll-trigger" href="#education">Educación</a>
+				<li class="text-center py-2 mt-2">
+					<a onclick="closeMobileMenu()" class="hover:underline" href="#experiencia">Experiencia</a>
 				</li>
-				<li class="nav-item">
-					<a class="nav-link js-scroll-trigger" href="#skills">Habilidades</a>
+				<li class="text-center py-2 mt-2">
+					<a onclick="closeMobileMenu()" class="hover:underline" href="#habilidades">Habilidades</a>
 				</li>
-				<li class="nav-item">
-					<a class="nav-link js-scroll-trigger" href="#interests">Intereses</a>
+				<li class="text-center py-2 mt-2">
+					<a onclick="closeMobileMenu()" class="hover:underline" href="#educacion">Educación</a>
 				</li>
-				<li class="nav-item">
-					<a class="nav-link js-scroll-trigger" href="#awards">Reconocimientos</a>
+				<li class="text-center py-2 mt-2">
+					<a onclick="closeMobileMenu()" class="hover:underline" href="#intereses">Intereses</a>
+				</li>
+				<li class="text-center py-2 mt-2">
+					<a onclick="closeMobileMenu()" class="hover:underline" href="#reconocimientos">Reconocimientos</a>
 				</li>
 			</ul>
-		</div>
-	</nav>
+		</nav>
+		
+		<button id="closeMobileMenuBtn" class="absolute bottom-6 right-6 rounded-full h-16 w-16 shadow-lg text-2xl bg-white">
+			<i class="fas fa-times"></i>
+		</button>
+	</div>
 	
-	<div class="container-fluid p-0">
-		
-		<section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="about">
-			<div class="w-100">
-				<h1 class="mb-0">José Eduardo
-					<span class="text-primary">Gómez</span>
-				</h1>
-				<div class="subheading mb-5">Lic. en Sistemas Informáticos · Santa Ana, El Salvador ·
-					<a href="mailto:gomez.jed@gmail.com">gomez.jed@gmail.com</a>
-				</div>
-				<p class="lead mb-5">Desarrollador web. Aficionado a la tecnología porque aumenta el potencial del ser humano.</p>
-				<div class="social-icons">
-					<a href="https://github.com/jeduardogomez">
-						<i class="fab fa-github"></i>
-					</a>
-					<a href="mailto:gomez.jed@gmail.com">
-						<i class="far fa-envelope"></i>
-					</a>
-				</div>
-			</div>
-		</section>
-		
-		<hr class="m-0">
-		
-		<section class="resume-section p-3 p-lg-5 d-flex justify-content-center" id="experience">
-			<div class="w-100">
-				<h2 class="mb-5">Experiencia laboral</h2>
-				
-				<div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
-					<div class="resume-content">
-						<h3 class="mb-0">Desarrollador</h3>
-						<div class="subheading mb-3">Communities DNA</div>
-						<p>Desarrollo y mantenimiento de apps web. Administración de bases de datos. Gestión de servidores. Integración de servicios.</p>
-					</div>
-					<div class="resume-date text-md-right">
-						<span class="text-primary">2019 - Actualidad</span>
-					</div>
-				</div>
-				
-				<div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
-					<div class="resume-content">
-						<h3 class="mb-0">Docente</h3>
-						<div class="subheading mb-3">Universidad Católica de El Salvador</div>
-						<p>Cátedra de materias del campo de informática para la Facultad de Ciencias Empresariales.</p>
-					</div>
-					<div class="resume-date text-md-right">
-						<span class="text-primary">2017 - 2019</span>
-					</div>
-				</div>
-				
-				<div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
-					<div class="resume-content">
-						<h3 class="mb-0">Desarrollador</h3>
-						<div class="subheading mb-3">Mako Digital</div>
-					</div>
-					<div class="resume-date text-md-right">
-						<span class="text-primary">2017 - 2018</span>
-					</div>
-				</div>
-				
-				<div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
-					<div class="resume-content">
-						<h3 class="mb-0">Desarrollador</h3>
-						<div class="subheading mb-3">Quantus Technologies</div>
-					</div>
-					<div class="resume-date text-md-right">
-						<span class="text-primary">2015 - 2016</span>
-					</div>
-				</div>
-				
-			</div>
-			
-		</section>
-		
-		<hr class="m-0">
-		
-		<section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="education">
-			<div class="w-100">
-				<h2 class="mb-5">Educación</h2>
-				
-				<div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
-					<div class="resume-content">
-						<h3 class="mb-0">Universidad Católica de El Salvador</h3>
-						<div class="subheading mb-3">Licenciatura en Sistemas Informáticos Administrativos</div>
-					</div>
-					<div class="resume-date text-md-right">
-						<span class="text-primary">2010 - 2015</span>
-					</div>
-				</div>
-				
-				<div class="resume-item d-flex flex-column flex-md-row justify-content-between">
-					<div class="resume-content">
-						<h3 class="mb-0">Liceo San Luis</h3>
-						<div class="subheading mb-3">Bachillerato General · Educación Básica</div>
-					</div>
-					<div class="resume-date text-md-right">
-						<span class="text-primary">1995 - 2006</span>
-					</div>
-				</div>
-				
-			</div>
-		</section>
-		
-		<hr class="m-0">
-		
-		<section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="skills">
-			<div class="w-100">
-				<h2 class="mb-5">Habilidades</h2>
-				
-				<div class="subheading mb-3">Lenguajes, librerías, herramientas</div>
-					<ul class="list-inline dev-icons">
-						<li class="list-inline-item">
-							<i class="fab fa-html5"></i>
-						</li>
-						<li class="list-inline-item">
-							<i class="fab fa-css3-alt"></i>
-						</li>
-						<li class="list-inline-item">
-							<i class="fab fa-js-square"></i>
-						</li>
-						<li class="list-inline-item">
-							<i class="fab fa-php"></i>
-						</li>
-						<li class="list-inline-item">
-							<i class="fab fa-wordpress"></i>
-						</li>
-						<li class="list-inline-item">
-							<i class="fab fa-react"></i>
-						</li>
-						<li class="list-inline-item">
-							<i class="fab fa-vuejs"></i>
-						</li>
-						<li class="list-inline-item">
-							<i class="fab fa-node-js"></i>
-						</li>
-						<li class="list-inline-item">
-							<i class="fab fa-npm"></i>
-						</li>
-						<li class="list-inline-item">
-							<i class="fab fa-git-square"></i>
-						</li>
-						<li class="list-inline-item">
-							<i class="fab fa-github"></i>
-						</li>
-						<li class="list-inline-item">
-							<i class="fab fa-linux"></i>
-						</li>
-						<li class="list-inline-item">
-							<i class="fab fa-digital-ocean"></i>
-						</li>
-						<li class="list-inline-item">
-							<i class="fa fa-database"></i>
-						</li>
-						<li class="list-inline-item">
-							<i class="fab fa-bootstrap"></i>
-						</li>
-					</ul>
-				
-				<div class="subheading mb-3">Principios y metodologías de trabajo</div>
-					<ul class="fa-ul mb-3">
-						<li>
-							<i class="fa-li fa fa-check"></i>
-							Diseño responsivo, multi-dispositivo</li>
-						<li>
-							<i class="fa-li fa fa-check"></i>
-							Metodología ágil</li>
-						<li>
-							<i class="fa-li fa fa-check"></i>
-							Equipos distribuidos</li>
-						<li>
-							<i class="fa-li fa fa-check"></i>
-							Trabajo remoto</li>
-					</ul>
-
-				<div class="subheading mb-3">Idiomas</div>
-				<ul class="fa-ul mb-0">
-					<li>
-						<i class="fa-li fas fa-language"></i>
-						Inglés
+	<button id="openMobileMenuBtn" class="fixed z-10 bottom-6 right-6 rounded-full h-16 w-16 shadow-lg text-2xl bg-white md:hidden">
+		<i class="fas fa-bars"></i>
+	</button>
+	
+	<div class="lg:flex">
+		<aside class="hidden fixed h-screen w-40 bg-gray-300 md:flex lg:w-48">
+			<nav class="w-full self-center">
+				<ul class="text-indigo-600 font-nunito">
+					<li class="text-center py-2">
+						<a class="hover:underline" href="#">Sobre mí</a>
 					</li>
-					<li>
-						<i class="fa-li fas fa-language"></i>
-						Español
+					<li class="text-center py-2 mt-2">
+						<a class="hover:underline" href="#proyectos">Proyectos</a>
+					</li>
+					<li class="text-center py-2 mt-2">
+						<a class="hover:underline" href="#experiencia">Experiencia</a>
+					</li>
+					<li class="text-center py-2 mt-2">
+						<a class="hover:underline" href="#habilidades">Habilidades</a>
+					</li>
+					<li class="text-center py-2 mt-2">
+						<a class="hover:underline" href="#educacion">Educación</a>
+					</li>
+					<li class="text-center py-2 mt-2">
+						<a class="hover:underline" href="#intereses">Intereses</a>
+					</li>
+					<li class="text-center py-2 mt-2">
+						<a class="hover:underline" href="#reconocimientos">Reconocimientos</a>
 					</li>
 				</ul>
-			</div>
+			</nav>
+		</aside>
+		<main class="max-w-screen-2xl md:ml-40 lg:ml-48">
+			<section class="p-4 lg:min-h-screen lg:flex lg:justify-around lg:items-center">
+				<img src="./assets/img/self.jpg" alt="" class="rounded-lg w-full h-64 object-cover sm:h-80 lg:h-3/5 lg:order-2 lg:w-2/5">
+				<div class="lg:order-1 lg:w-2/5">
+					<div>
+						<h1 class="font-nunito text-5xl mt-4">José Eduardo Gómez</h1>
+						<p class="font-nunito text-lg mt-2">
+							Lic. en Sistemas Informáticos · Santa Ana, El Salvador · <a href="mailto:gomez.jed@gmail.com" class="text-indigo-600 hover:underline">gomez.jed@gmail.com</a>
+						</p>
+						<p class="mt-4">
+							Desarrollador web. Aficionado a la tecnología porque aumenta el potencial del ser humano.
+						</p>
+					</div>
+					<div class="mt-4 text-2xl">
+						<a href="https://github.com/jeduardogomez">
+							<i class="fab fa-github"></i>
+						</a>
+						<a href="mailto:gomez.jed@gmail.com">
+							<i class="far fa-envelope"></i>
+						</a>
+					</div>
+					<div class="w-full mt-4">
+						<a href="mailto:gomez.jed@gmail.com" class="px-4 py-2 font-nunito rounded-lg text-center bg-yellow-500 text-lg lg:text-xl hover:bg-yellow-400">Contáctame</a>
+					</div>
+				</div>
 			</section>
-						
-						<hr class="m-0">
-						
-						<section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="interests">
-							<div class="w-100">
-								<h2 class="mb-5">Intereses</h2>
-								<p>El desarrollo web, porque la web es muy dinámica. Ofrece muchas herramientas y recursos para crear soluciones que atiendan necesidades muy diversas. Y también porque la web es democrática y reduce las barreras de acceso a la información.</p>
-								<p>El sistema operativo Linux por su estabilidad, seguridad, grado de control y personalización.</p>
-								<p>Me gustan los proyectos FOSS en general. Me agrada la filosofía del trabajo colaborativo y de compartir el conocimiento para mejorar como sociedad.</p>
-								<p>Disfruto de organizar la información. Cosas como el trabajo con bases de datos, estructurar una API o utilizar un sistema de control de versiones como Git.</p>
-								<p class="mb-0">Más allá de la tecnología, me interesan los e-sports, la historia, la exploración espacial, la biodiversidad.</p>
-							</div>
-						</section>
-						
-						<hr class="m-0">
-						
-						<section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="awards">
-							<div class="w-100">
-								<h2 class="mb-5">Reconocimientos</h2>
-								<ul class="fa-ul mb-0">
-									<li>
-										<i class="fa-li fa fa-trophy text-warning"></i>
-										2015 - Graduado con Honores, Magna Cum Laude, Universidad Católica de El Salvador (CUM 9.2)</li>
-									<li>
-										<i class="fa-li fa fa-trophy text-warning"></i>
-										2007 - Premio Joven Talento de El Salvador</li>
-									<li>
-										<i class="fa-li fa fa-trophy text-warning"></i>
-										2007 - 3<sup>er</sup> lugar - Concurso Hispanoamericano de Ortografía</li>
-									<li>
-										<i class="fa-li fa fa-trophy text-warning"></i>
-										2006 - 1<sup>er</sup> lugar - Concurso Nacional de Ortografía</li>
-									<li>
-										<i class="fa-li fa fa-trophy text-warning"></i>
-										2006 - Reconocimiento por resultados destacados PAES (9.8)</li>
-								</ul>
-							</div>
-						</section>
-								
-							</div>
-									
-									<!-- Bootstrap core JavaScript -->
-									<script src="vendor/jquery/jquery.min.js"></script>
-									<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-									
-									<!-- Plugin JavaScript -->
-									<script src="vendor/jquery-easing/jquery.easing.min.js"></script>
-									
-									<!-- Custom scripts for this template -->
-									<script src="js/resume.min.js"></script>
-									
-								</body>
-								
-								</html>
+			
+			<section id="proyectos" class="mt-20 p-4 lg:mt-0 lg:min-h-screen lg:flex lg:justify-around lg:items-center">
+				<div class="lg:w-2/5">
+					<h2 class="text-3xl font-nunito">Proyectos</h2>
+					<p>Una selección de mi trabajo.</p>
+					<div class="mt-6">
+						<h3 class="text-lg font-nunito">
+							Volvo Store Panamá
+							<a href="http://volvocarpanama.com/" target="_blank" rel="noopener noreferrer" class="ml-2 text-indigo-600 hover:text-indigo-700">
+								<i class="fas fa-arrow-circle-right"></i>
+							</a>
+						</h3>
+						<p>Portal de presentación de flota de vehículos, promociones y adquisición de clientes.</p>
+					</div>
+					<div class="mt-6">
+						<h3 class="text-lg font-nunito">
+							EFB Export
+							<a href="https://efb-export.com/" target="_blank" rel="noopener noreferrer" class="ml-2 text-indigo-600 hover:text-indigo-700">
+								<i class="fas fa-arrow-circle-right"></i>
+							</a>
+						</h3>
+						<p>Sitio corporativo. Compañía de servicios de transporte y logística globales, con base en Florida, USA.</p>
+					</div>
+					<div class="mt-6">
+						<h3 class="text-lg font-nunito">
+							En Casa con Volvo
+							<a href="https://encasaconvolvo.com/" target="_blank" rel="noopener noreferrer" class="ml-2 text-indigo-600 hover:text-indigo-700">
+								<i class="fas fa-arrow-circle-right"></i>
+							</a>
+						</h3>
+						<p>Blog creado para mantener cercanía con los clientes de la empresa durante la pandemia por COVID-19.</p>
+					</div>
+				</div>
+				<div class="lg:w-2/5">
+					<div class="mt-6">
+						<h3 class="text-lg font-nunito">
+							Curul 85
+							<a href="https://curul85.com/" target="_blank" rel="noopener noreferrer" class="ml-2 text-indigo-600 hover:text-indigo-700">
+								<i class="fas fa-arrow-circle-right"></i>
+							</a>
+						</h3>
+						<p>Portal de comunicación independiente, para estimular la observación ciudadana de la Asamblea Legislativa, SV.</p>
+					</div>
+					<div class="mt-6">
+						<h3 class="text-lg font-nunito">
+							Integralis Consulting Group
+							<a href="https://www.integraliscg.com/" target="_blank" rel="noopener noreferrer" class="ml-2 text-indigo-600 hover:text-indigo-700">
+								<i class="fas fa-arrow-circle-right"></i>
+							</a>
+						</h3>
+						<p>Sitio corporativo con oferta de servicios y recursos de consultoría de alto nivel. Empresa internacional, basada en Argentina.</p>
+					</div>
+				</div>
+			</section>
+			
+			<section id="experiencia" class="mt-20 p-4 lg:mt-0 lg:h-screen lg:min-h-screen lg:flex lg:justify-around lg:items-center">
+				<div class="lg:w-2/5">
+					<h2 class="text-3xl font-nunito">Experiencia laboral</h2>
+					<div class="mt-6">
+						<h3 class="text-lg font-nunito">
+							Desarrollador <span class="text-gray-500">@ Communities DNA</span>
+						</h3>
+						<p class="text-yellow-500 font-bold tracking-wider">2019 - Actualidad</p>
+						<p>Desarrollo y mantenimiento de apps y sitios web. Administración de bases de datos. Gestión de servidores. Integración de servicios.</p>
+					</div>
+					<div class="mt-6">
+						<h3 class="text-lg font-nunito">
+							Docente <span class="text-gray-500">@ Universidad Católica de El Salvador</span>
+						</h3>
+						<p class="text-yellow-500 font-bold tracking-wider">2017 - 2019</p>
+						<p>Cátedra de materias del campo de informática para la Facultad de Ciencias Empresariales.</p>
+					</div>
+					<div class="mt-6">
+						<h3 class="text-lg font-nunito">
+							Desarrollador <span class="text-gray-500">@ Mako Digital</span>
+						</h3>
+						<p class="text-yellow-500 font-bold tracking-wider">2017 - 2018</p>
+					</div>
+					<div class="mt-6">
+						<h3 class="text-lg font-nunito">
+							Desarrollador <span class="text-gray-500">@ Quantus Technologies</span>
+						</h3>
+						<p class="text-yellow-500 font-bold tracking-wider">2015 - 2016</p>
+					</div>
+				</div>
+				<img loading="lazy" src="https://images.unsplash.com/photo-1498409785966-ab341407de6e?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1360&q=80" alt="" class="rounded-lg object-cover h-3/5 w-2/5 hidden lg:block">
+			</section>
+			
+			<section id="habilidades" class="mt-20 p-4 lg:mt-0 lg:h-screen lg:min-h-screen lg:flex lg:justify-around lg:items-center">
+				<div class="lg:w-2/5">
+					<h2 class="text-3xl font-nunito">Habilidades</h2>
+					<div class="mt-6">
+						<h3 class="text-lg font-nunito">
+							Lenguajes, librerías, herramientas
+						</h3>
+						<ul class="flex flex-wrap text-3xl text-gray-500">
+							<li class="mr-4 mt-2 hover:text-indigo-600">
+								<i class="fab fa-html5"></i>
+							</li>
+							<li class="mr-4 mt-2 hover:text-indigo-600">
+								<i class="fab fa-css3-alt"></i>
+							</li>
+							<li class="mr-4 mt-2 hover:text-indigo-600">
+								<i class="fab fa-js-square"></i>
+							</li>
+							<li class="mr-4 mt-2 hover:text-indigo-600">
+								<i class="fab fa-php"></i>
+							</li>
+							<li class="mr-4 mt-2 hover:text-indigo-600">
+								<i class="fab fa-wordpress"></i>
+							</li>
+							<li class="mr-4 mt-2 hover:text-indigo-600">
+								<i class="fab fa-react"></i>
+							</li>
+							<li class="mr-4 mt-2 hover:text-indigo-600">
+								<i class="fab fa-vuejs"></i>
+							</li>
+							<li class="mr-4 mt-2 hover:text-indigo-600">
+								<i class="fab fa-node-js"></i>
+							</li>
+							<li class="mr-4 mt-2 hover:text-indigo-600">
+								<i class="fab fa-npm"></i>
+							</li>
+							<li class="mr-4 mt-2 hover:text-indigo-600">
+								<i class="fab fa-git-square"></i>
+							</li>
+							<li class="mr-4 mt-2 hover:text-indigo-600">
+								<i class="fab fa-github"></i>
+							</li>
+							<li class="mr-4 mt-2 hover:text-indigo-600">
+								<i class="fab fa-linux"></i>
+							</li>
+							<li class="mr-4 mt-2 hover:text-indigo-600">
+								<i class="fab fa-digital-ocean"></i>
+							</li>
+							<li class="mr-4 mt-2 hover:text-indigo-600">
+								<i class="fa fa-database"></i>
+							</li>
+							<li class="mr-4 mt-2 hover:text-indigo-600">
+								<i class="fab fa-bootstrap"></i>
+							</li>
+						</ul>
+					</div>
+					<div class="mt-6">
+						<h3 class="text-lg font-nunito">
+							Principios y metodologías de trabajo
+						</h3>
+						<ul>
+							<li>
+								Diseño responsivo, multi-dispositivo
+							</li>
+							<li>
+								Metodología ágil
+							</li>
+							<li>
+								Equipos distribuidos
+							</li>
+							<li>
+								Trabajo remoto
+							</li>
+						</ul>
+					</div>
+					<div class="mt-6">
+						<h3 class="text-lg font-nunito">
+							Idiomas
+						</h3>
+						<ul>
+							<li>Inglés</li>
+							<li>Español</li>
+						</ul>
+					</div>
+				</div>
+				<img loading="lazy" src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+				alt="" class="rounded-lg object-cover h-3/5 w-2/5 hidden lg:block">
+			</section>
+			
+			<section id="educacion" class="mt-20 p-4 lg:mt-0 lg:h-screen lg:min-h-screen lg:flex lg:justify-around lg:items-center">
+				<img loading="lazy" src="./assets/img/unicaes.jpg" alt="" class="rounded-lg w-full h-64 object-cover sm:h-80 lg:h-3/5 lg:order-2 lg:w-2/5">
+				<div class="lg:order-1 lg:w-2/5">
+					<h2 class="text-3xl font-nunito mt-4">Educación</h2>
+					<div class="mt-6">
+						<h3 class="text-lg font-nunito">
+							Licenciatura en Sistemas Informáticos Administrativos <span class="text-gray-500">@ Universidad Católica de El Salvador</span>
+						</h3>
+						<p class="text-yellow-500 font-bold tracking-wider">2010 - 2015</p>
+					</div>
+					<div class="mt-6">
+						<h3 class="text-lg font-nunito">
+							Bachillerato General + Educación Básica <span class="text-gray-500">@ Liceo San Luis</span>
+						</h3>
+						<p class="text-yellow-500 font-bold tracking-wider">1995 - 2006</p>
+					</div>
+				</div>
+			</section>
+			
+			<section id="intereses" class="mt-20 p-4 lg:mt-0 lg:h-screen lg:min-h-screen lg:flex lg:justify-around lg:items-center">
+				<div class="lg:w-2/5">
+					<h2 class="text-3xl font-nunito">Intereses</h2>
+					<div class="mt-6">
+						<p>El desarrollo web, porque la web es muy dinámica. Ofrece muchas herramientas y recursos para crear soluciones que atiendan necesidades muy diversas. Y también porque la web es democrática y reduce las barreras de acceso a la información.</p>
+						<p class="mt-4">El sistema operativo Linux por su estabilidad, seguridad, grado de control y personalización.</p>
+						<p class="mt-4">Me gustan los proyectos FOSS en general. Me agrada la filosofía del trabajo colaborativo y de compartir el conocimiento para mejorar como sociedad.</p>
+						<p class="mt-4">Disfruto de organizar la información. Cosas como el trabajo con bases de datos, estructurar una API o utilizar un sistema de control de versiones como Git.</p>
+						<p class="mt-4">Más allá de la tecnología, me interesan los e-sports, ciencia ficción, historia, exploración espacial y el mundo natural y su biodiversidad.</p>
+					</div>
+				</div>
+				<img loading="lazy" src="https://images.unsplash.com/photo-1446776811953-b23d57bd21aa?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1352&q=80" alt="" class="rounded-lg object-cover h-3/5 w-2/5 hidden lg:block">
+			</section>
+			
+			<section id="reconocimientos" class="mt-20 p-4 lg:mt-0 lg:h-screen lg:min-h-screen lg:flex lg:justify-around lg:items-center">
+				<div class="lg:w-2/5">
+					<h2 class="text-3xl font-nunito">Reconocimientos</h2>
+					<div class="mt-6">
+						<ul>
+							<li>
+								<span class="text-yellow-500 font-bold tracking-wider">2015</span>
+								Graduado con Honores, Magna Cum Laude, Universidad Católica de El Salvador (CUM 9.2)
+							</li>
+							<li class="mt-4">
+								<span class="text-yellow-500 font-bold tracking-wider">2007</span>
+								Premio Joven Talento de El Salvador
+							</li>
+							<li class="mt-4">
+								<span class="text-yellow-500 font-bold tracking-wider">2007</span>
+								3<sup>er</sup> lugar en Concurso Hispanoamericano de Ortografía
+							</li>
+							<li class="mt-4">
+								<span class="text-yellow-500 font-bold tracking-wider">2006</span>
+								1<sup>er</sup> lugar en Concurso Nacional de Ortografía
+							</li>
+							<li class="mt-4">
+								<span class="text-yellow-500 font-bold tracking-wider">2006</span>
+								Reconocimiento por resultados destacados PAES (9.8)
+							</li>
+						</ul>
+					</div>
+				</div>
+				<img loading="lazy" src="https://images.pexels.com/photos/6120394/pexels-photo-6120394.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="" class="rounded-lg object-cover h-3/5 w-2/5 hidden lg:block">
+			</section>
+			
+			<section class="mt-10 p-4 text-center">
+				<p>¿Tienes un proyecto en mente?</p>
+				<a href="mailto:gomez.jed@gmail.com" class="inline-block mt-2 px-4 py-2 font-nunito rounded-lg text-center bg-yellow-500 text-lg lg:text-xl hover:bg-yellow-400">Contáctame</a>
+			</section>
+
+			<footer class="mt-20 p-6">
+				<hr>
+				<p class="mt-6 text-center text-gray-500">2021</p>
+			</footer>
+		</main>
+	</div>
+	<script src="./assets/js/main.js"></script>
+</body>
+</html>
