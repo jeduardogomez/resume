@@ -1,0 +1,27 @@
+{
+	"name": "resume",
+	"version": "0.1.0",
+	"description": "",
+	"dependencies": {
+		"autoprefixer": "^10.2.4",
+		"postcss": "^8.2.6",
+		"tailwindcss": "^2.0.3"
+	},
+	"devDependencies": {
+		"postcss-cli": "^8.3.1"
+	},
+	"scripts": {
+		"postcssdev": "postcss ./src/tailwind.css -o assets/css/devstyle.css",
+		"postcssprod": "NODE_ENV=production postcss ./src/tailwind.css -o assets/css/style.css"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/jeduardogomez/resume.git"
+	},
+	"author": "Eduardo Gómez",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/jeduardogomez/resume/issues"
+	},
+	"homepage": "https://github.com/jeduardogomez/resume#readme"
+}

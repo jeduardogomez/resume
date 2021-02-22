@@ -1,0 +1,12 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+	.font-nunito {
+		font-family: 'Nunito', sans-serif;
+	}
+	.font-raleway {
+		font-family: 'Raleway', sans-serif;
+	}
+}
